@@ -151,7 +151,7 @@ class LangParser {
             throw "invalid date";
         }
 
-        this.updates.unshift({ author, date: moment(_date).format("DD/MM/YYYY") });
+        this.updates.unshift({ author, date: makeDate(_date) });
     }
 
     filter(cb) {
